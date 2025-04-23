@@ -3,7 +3,7 @@ import profileImg from '../assets/Laya_Aluri_Profile_Image.jpg'
 function AboutMenu() {
     return(
         <>
-            <section className="flex flex-col md:flex-row items-center justify-center px-6 py-12
+            <section className="flex flex-col md:flex-row items-center justify-center px-6 py-20
               text-center md:text-left gap-10">
                 <div className="flex-shrink-0">
                     <img
@@ -31,7 +31,7 @@ function AboutMenu() {
                         Download Resume
                     </a>
                     <a
-                        href="/contact"
+                        href="/portfolio/contact"
                         className="px-6 py-2 rounded-full border-1 border-gray-300 hover:bg-gray-100 transition"
                     >
                         Contact

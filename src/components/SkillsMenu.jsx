@@ -7,10 +7,14 @@ import aws_icon from '../icons/aws_icon.svg';
 import javascript_icon from '../icons/javascript_icon.svg';
 import react_icon from '../icons/react_icon.svg';
 import git_icon from '../icons/git_icon.svg';
-import mongodb_icon from '../icons/git_icon.svg';
+import mongodb_icon from '../icons/mongo_db_icons.jpg';
 import typescript_icon from '../icons/typescript_icon.svg';
 import docker_icon from '../icons/docker_icon.svg';
 import tailwind_icon from '../icons/tailwind_icon.svg';
+import angular_icon from '../icons/angular_icon.svg';
+import mysql_icon from '../icons/mysql_icon.svg';
+import spring_boot_icon from '../icons/spring_boot_icon.jpg';
+import jenkins_icon from '../icons/jenkins_icon.jpg';
 
 const skills = [
   { name: 'HTML', icon: html_icon },
@@ -22,7 +26,11 @@ const skills = [
   { name: 'MongoDB', icon: mongodb_icon },
   { name: 'Type Script', icon: typescript_icon },
   { name: 'Dockers', icon: docker_icon },
-  { name: 'Tail Wind', icon: tailwind_icon }
+  { name: 'Tail Wind', icon: tailwind_icon },
+  { name: 'My SQL', icon: mysql_icon },
+  { name: 'Angular', icon: angular_icon },
+  { name: 'Sprint Boot', icon: spring_boot_icon },
+  {name: 'Jenkins', icon: jenkins_icon }
 ];
 
 export default function SkillsMenu() {
@@ -66,7 +74,7 @@ export default function SkillsMenu() {
         {/* Scrollable Skills Grid with hidden scrollbar */}
         <div
           ref={gridRef}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 h-[300px] overflow-y-scroll pl-10 pr-4 custom-scrollbar-hide"
+          className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 h-[300px] overflow-y-scroll pl-10 pr-4 custom-scrollbar-hide"
         >
           {skills.map((skill, index) => (
             <div
@@ -80,7 +88,7 @@ export default function SkillsMenu() {
         </div>
 
         {/* Custom vertical scroll indicator (fake scrollbar) */}
-        <div className="hidden md:flex flex-col space-y-2 ml-4 mt-2 items-center justify-center">
+        <div className="flex flex-col space-y-2 ml-4 mt-2 items-center justify-center">
           {[...Array(segments)].map((_, i) => (
             <div
               key={i}
