@@ -1,0 +1,16 @@
+
+@import "tailwindcss";
+
+
+#root {
+   font-weight: 100;
+   background-image: 
+      linear-gradient(122deg, #5b4bc6 0%, #0f251a 100%),
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 
+    100% 100%, /* gradient */
+    40px 40px, /* horizontal spacing */
+    40px 40px; /* vertical spacing */
+  background-repeat: repeat;
+}

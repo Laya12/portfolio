@@ -1,0 +1,137 @@
+.skills-wrapper {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.skills-sidebar {
+    width: 10%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    position: relative;
+    text-align: center; /* Center the text inside the sidebar */
+}
+
+.sidebar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    writing-mode: vertical-rl; /* Makes the text vertical */
+    transform: rotate(180deg); /* Rotate to correct the direction */
+    margin-bottom: 10px; /* Add some space between the text and the line */
+    display: flex;
+    flex-direction: column; /* Arrange text and line vertically */
+    align-items: center; /* Center the text and the line horizontally */
+}
+
+.sidebar-title::after {
+    content: '';
+    width: 2px;
+    height: 50px; /* Length of the vertical line */
+    background-color: #ffb100; /* Line color */
+    margin-top: 10px; /* Space between text and the line */
+}
+
+.skills-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.skills-scroll-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.skills-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #2041ac;
+    text-align: center;
+    width:150px;
+}
+
+.skill-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+    color: white;
+    border: 2px solid #2041ac;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: #2041ac;
+}
+
+.scroll-btn.left {
+    position: absolute;
+    left: -30px;
+}
+
+.scroll-btn.right {
+    position: absolute;
+    right: -30px;
+}
+
+.skills-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.skills-grid::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+
+/* Hide default scrollbar but keep scroll functionality */
+.custom-scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+.custom-scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+  
