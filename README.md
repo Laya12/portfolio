@@ -22,7 +22,7 @@ Welcome! This is the source code for my personal portfolio website built using *
 You can download my resume directly [here](https://layaaluriportfolio.netlify.app/portfolio/Laya_Aluri_Resume.pdf).
 
 ## 📬 Contact
-If you'd like to get in touch, head over to the [Contact section](https://layaaluriportfolio.netlify.app/portfolio/contact) of my website.
+If you'd like to get in touch, head over to the [Contact section](https://layaaluriportfolio.netlify.app/portfolio) of my website.
 
 ---
 
