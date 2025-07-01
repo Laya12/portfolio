@@ -1,12 +1,29 @@
-# React + Vite
+# Laya Aluri — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome! This is the source code for my personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**, and deployed via **Netlify**.
 
-Currently, two official plugins are available:
+🖥️ **Live Website:**  
+👉 [https://layaaluriportfolio.netlify.app/portfolio/](https://layaaluriportfolio.netlify.app/portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- Netlify
 
-## Expanding the ESLint configuration
+## 📁 Features
+- Responsive design
+- Smooth navigation and routing
+- Resume download
+- Sections for Skills, Education, Experience, Contact
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📄 Resume
+You can download my resume directly [here](https://layaaluriportfolio.netlify.app/portfolio/Laya_Aluri_Resume.pdf).
+
+## 📬 Contact
+If you'd like to get in touch, head over to the [Contact section](https://layaaluriportfolio.netlify.app/portfolio/contact) of my website.
+
+---
+
+Feel free to explore the code or reach out on [LinkedIn](https://www.linkedin.com/in/laya-aluri-790575183/).
