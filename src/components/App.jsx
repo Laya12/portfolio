@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link,Route,Routes } from 'react-router-dom';
+import { Link,Route,Routes, Navigate  } from 'react-router-dom';
 
 
 import '../styles/App.css'
@@ -58,13 +58,15 @@ function App() {
        </div>
       </header>    
       <main className="flex-1 m-[42px]">
-        <Routes>
-          <Route path="/skills" element={<SkillsMenu/>} />
-          <Route path="/about" element={<AboutMenu/>} />
-          <Route path="/contact" element={<ContactMenu/>} />
-          <Route path="/education" element={<EducationMenu/>} />
-          <Route path="/experience" element={<ExperienceMenu/>} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Navigate to="/about" replace />} />
+        <Route path="/about" element={<AboutMenu />} />
+        <Route path="/skills" element={<SkillsMenu />} />
+        <Route path="/experience" element={<ExperienceMenu />} />
+        <Route path="/education" element={<EducationMenu />} />
+        <Route path="/contact" element={<ContactMenu />} />
+      </Routes>
+
       </main>
       <footer className="bg-muted py-4 text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Laya Aluri. All rights reserved.
